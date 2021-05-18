@@ -7,7 +7,7 @@
         "build": "ng build",
         "watch": "ng build --watch --configuration development",
         "test": "ng test",
-        "postinstall": "ng build --aot --configuration production"
+        "heroku-post-build": "ng build --aot --configuration production"
     },
     "private": true,
     "dependencies": {
@@ -15,6 +15,8 @@
         "@angular/common": "~12.0.0",
         "@angular/compiler": "~12.0.0",
         "@angular/core": "~12.0.0",
+        "@angular/cli": "~12.0.0",
+        "@angular/compiler-cli": "~12.0.0",
         "@angular/forms": "~12.0.0",
         "@angular/platform-browser": "~12.0.0",
         "@angular/platform-browser-dynamic": "~12.0.0",
@@ -32,7 +34,6 @@
         "@angular/compiler-cli": "~12.0.0",
         "@types/jasmine": "~3.6.0",
         "@types/node": "^12.11.1",
-        "enhanced-resolve": "^3.3.0",
         "jasmine-core": "~3.7.0",
         "karma": "~6.3.0",
         "karma-chrome-launcher": "~3.1.0",
